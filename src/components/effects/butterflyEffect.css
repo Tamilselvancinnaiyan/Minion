@@ -1,0 +1,120 @@
+ButterflyEffect.css
+.butterfly-container {
+  position: relative;
+}
+
+/* .butterfly-large {
+  width: 348px; 
+  height: 208px;
+  transform: rotate(20deg) translate(30px, 60px) scale(0.6, 0.8);
+  transform-origin: center center;
+  position: absolute;
+  right: 30px;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5536/wing.png') no-repeat;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-name: rightwingani;
+}
+
+.butterfly-small {
+  width: 150px; 
+  height: 87px; 
+  transform: rotate(-30deg) translate(30px, 60px) scale(0.8, 0.8);
+  transform-origin: center center;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5536/wing-small.png') no-repeat;
+  position: absolute;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-name: leftwingani;
+} */
+.butterfly-large,
+.butterfly-small {
+  position: absolute;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.butterfly-large {
+  width: 348px; /* Adjust the width based on your design */
+  height: 208px; /* Adjust the height based on your design */
+  transform: rotate(20deg) scale(0.8, 0.8);
+  transform-origin: center center;
+  bottom: 30px;
+  left: 30px;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5536/wing.png') no-repeat;
+  animation-name: rightwingani;
+}
+
+.butterfly-small {
+  width: 150px; /* Adjust the width based on your design */
+  height: 87px; /* Adjust the height based on your design */
+  transform: rotate(-20deg) scale(0.8, 0.8);
+  transform-origin: center center;
+  top: 30px;
+  right: 30px;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5536/wing-small.png') no-repeat;
+  animation-name: leftwingani;
+}
+
+/* Add the mirrored effect for the small butterfly */
+.butterfly-small::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(-1); /* Flip horizontally */
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5536/wing-small.png') no-repeat;
+}
+
+/* Add the mirrored effect for the large butterfly */
+.butterfly-large::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(-1); /* Flip horizontally */
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5536/wing.png') no-repeat;
+}
+
+@keyframes rightwingani {
+  from {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  30% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 100deg);
+  }
+  70% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+}
+
+@keyframes leftwingani {
+  from {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+
+  30% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+
+  50% {
+    transform: rotate3d(0, 1, 0, 80deg);
+  }
+
+  70% {
+    transform: rotate3d(0, 1, 0, 00deg);
+  }
+
+  to {
+    transform: rotate3d(0, 1, 0, 00deg);
+  }
+}
