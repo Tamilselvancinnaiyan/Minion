@@ -7,23 +7,27 @@ import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 import ButterflyEffect from './effects/butterflyEffect';
 
-import slide_image_1 from '../assets/images/img_1.jpg';
-import slide_image_2 from '../assets/images/img_2.jpg';
-import slide_image_3 from '../assets/images/img_3.jpg';
-import slide_image_4 from '../assets/images/img_4.jpg';
-import slide_image_5 from '../assets/images/img_5.jpg';
-import slide_image_6 from '../assets/images/img_6.jpg';
-import slide_image_7 from '../assets/images/img_7.jpg';
+import slide_image_1 from '../assets/images/theFirstsight.jpeg';
+import slide_image_2 from '../assets/images/confused af.jpeg';
+import slide_image_3 from '../assets/images/TheCourage.jpeg';
+import slide_image_4 from '../assets/images/talkotalk.jpeg';
+import slide_image_5 from '../assets/images/Her.jpeg';
+import slide_image_6 from '../assets/images/him.jpeg';
+import slide_image_7 from '../assets/images/pinkey_promises.jpeg';
+import slide_image_8 from '../assets/images/understanding.jpeg';
+import slide_image_9 from '../assets/images/mainfesting.jpeg';
 
 export const Slider = () => {
   const slides = [
-    { image: slide_image_1, text: "In the heart of a bustling metropolis, the cityscape hums with energy, a vibrant tapestry woven from the threads of diverse cultures and dynamic aspirations. Skyscrapers pierce the sky, reflecting the sun's warm embrace, while a kaleidoscope of neon signs illuminates the streets below. In this urban symphony, people weave through crowded sidewalks, each with a unique story etched in their expressions. The aroma of street food dances in the air, tantalizing taste buds with promises of culinary adventures. Amidst the urban hustle, hidden pockets of tranquility offer respite, inviting introspection. The city, a living organism, breathes life into dreams, aspirations, and shared moments." },
-    { image: slide_image_2, text: 'Text for Slide 2' },
-    { image: slide_image_3, text: 'Text for Slide 3' },
-    { image: slide_image_4, text: 'Text for Slide 4' },
-    { image: slide_image_5, text: 'Text for Slide 5' },
-    { image: slide_image_6, text: 'Text for Slide 6' },
-    { image: slide_image_7, text: 'Text for Slide 7' },
+    { image: slide_image_1, text: "Text for Slide 1", topic: '1. The First Sight' },
+    { image: slide_image_2, text: 'Text for Slide 2', topic: '2. The Confused Af' },
+    { image: slide_image_3, text: 'Text for Slide 3', topic: '3. The Courage' },
+    { image: slide_image_4, text: 'Text for Slide 4', topic: '4. Talk ooo Talk' },
+    { image: slide_image_5, text: 'Text for Slide 5', topic: '5. Her' },
+    { image: slide_image_6, text: 'Text for Slide 6', topic: '6. Him' },
+    { image: slide_image_7, text: 'Text for Slide 6', topic: '7. Pinky Promises' },
+    { image: slide_image_8, text: 'Text for Slide 7', topic: '8. Understanding' },
+    { image: slide_image_9, text: 'Text for Slide 8', topic: '9. Manifesting' },
   ];
   const [clickedIndex, setClickedIndex] = useState(null);
 
@@ -33,7 +37,7 @@ export const Slider = () => {
 
   return (
     <div className="container">
-      <h1 className="heading">Dummy content</h1>
+      <h1 className="heading">Kutty Story</h1>
       <ButterflyEffect />
       <Swiper
         effect={'coverflow'}
@@ -61,15 +65,20 @@ export const Slider = () => {
             key={index}
             onClick={() => handleSlideClick(index)}
             className={clickedIndex === index ? 'active-slide' : ''}
+            style={{
+              filter: clickedIndex !== null && clickedIndex !== index ? 'grayscale(100%)' : '',
+            }}
           >
             <div className="slide-container">
-              <div className="slide-topic">{`Topic ${index + 1}`}</div>
-              <img src={slide.image} alt={`slide_image_${index + 1}`} />
-              {clickedIndex === index && (
-                <div className="slide-overlay">
-                  <div className="slide-text">{slide.text}</div>
-                </div>
-              )}
+              <div className="slide-image-wrapper">
+                <img src={slide.image} alt={`slide_image_${index + 1}`} />
+                {clickedIndex === index && (
+                  <div className="slide-overlay">
+                    <div className="slide-text">{slide.text}</div>
+                  </div>
+                )}
+              </div>
+              <div className="slide-topic">{slide.topic}</div>
             </div>
           </SwiperSlide>
         ))}
