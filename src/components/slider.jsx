@@ -25,7 +25,6 @@ export const Slider = () => {
     { image: slide_image_6, text: 'Text for Slide 6' },
     { image: slide_image_7, text: 'Text for Slide 7' },
   ];
-
   const [clickedIndex, setClickedIndex] = useState(null);
 
   const handleSlideClick = (index) => {

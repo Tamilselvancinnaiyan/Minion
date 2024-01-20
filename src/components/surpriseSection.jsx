@@ -6,7 +6,7 @@ export const SurpriseSection = ({ setIssurpriseOpened }) => {
   return (
     <section className="surpriseWrapper">
       <button id="neonShadow" onClick={() => setIssurpriseOpened(true)}>
-        <span>Chhhhhhhh hhhhshshshhshshsh hshshss</span>
+        <span>Click his</span>
       </button>
       <Crackers />
       <Wish />

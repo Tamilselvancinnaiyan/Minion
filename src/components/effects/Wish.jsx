@@ -6,8 +6,8 @@ import './crackers';
 const Wish = () => {
   return (
     <div className="Bdy">
-        <div className="before"><p>Happy bdhdj bsbabh</p></div>
-        <div className="after"><p>kjsbhbs s</p></div>
+        <div className="bdywish"><p>Happy Birthday Dhanu</p></div>
+        <div className="nickname"><p>Kyoouutuuu</p></div>
     </div>
   );
 };
