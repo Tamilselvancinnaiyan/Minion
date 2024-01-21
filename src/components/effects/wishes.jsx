@@ -1,8 +1,4 @@
-
-
 import React from 'react';
-import './crackers';
-
 const Wish = () => {
   return (
     <div className="Bdy">
