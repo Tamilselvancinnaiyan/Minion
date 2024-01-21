@@ -11,7 +11,7 @@ import slide_image_1 from '../assets/images/theFirstsight.jpeg';
 import slide_image_2 from '../assets/images/confused af.jpeg';
 import slide_image_3 from '../assets/images/TheCourage.jpeg';
 import slide_image_4 from '../assets/images/talkotalk.jpeg';
-import slide_image_5 from '../assets/images/Her.jpeg';
+import slide_image_5 from '../assets/images/her.jpeg';
 import slide_image_6 from '../assets/images/him.jpeg';
 import slide_image_7 from '../assets/images/pinkey_promises.jpeg';
 import slide_image_8 from '../assets/images/understanding.jpeg';
