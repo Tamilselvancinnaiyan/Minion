@@ -1,6 +1,5 @@
-// ButterflyEffect.jsx
 import React from 'react';
-import './butterflyEffect.css'; // Import the styles for the butterfly effect
+import './butterflyEffect.css';
 
 const ButterflyEffect = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Crackers from "./effects/crackers";
-import Wish from "./effects/Wish";
+import Wish from "./effects/wish";
 import incorrectPasswordImage from "../assets/images/kick.svg";
 
 Modal.setAppElement("#root");

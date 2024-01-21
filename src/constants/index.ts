@@ -1,1 +1,1 @@
-export const COUNT_DOWN_TIME = new Date("January 5, 2024 00:00:00").getTime()
+export const COUNT_DOWN_TIME = new Date("January 25, 2024 00:00:00").getTime()
