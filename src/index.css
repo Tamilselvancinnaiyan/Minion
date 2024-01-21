@@ -302,52 +302,11 @@ h2 {
 .timer div:first-child p {
   color: #ae1b1b;
 }
-/* .timer div:last-child {
-  border: 1px solid #f8f8f8;
-  border-radius: 3px;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  margin-top: 3em;
-  padding: 3em;
-  text-align: center;
-} */
 
 section p:first-child,
 .timer div:last-child span {
   font-size: 3em;
 }
-
-/* For screens smaller than 768px wide
-@media (max-width: 768px) {
-  .timer {
-    padding-bottom: 4em; 
-    padding-top: 1em;
-  }
-  .timer div:last-child {
-    padding: 1em; 
-  }
-
-  .timer-icon {
-    font-size: 6em; 
-  }
-
-  section p:first-child, .timer div:last-child span {
-    font-size: 2em; 
-  }
-} */
-/* *{
-  padding:0px;
-  margin:0px;
-  box-sizing:border-box;
-  outline:none;
-}
-body{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:100vh;
-  background-color:#000000
-} */
 #neonShadow {
   height: 50px;
   width: 150px;
